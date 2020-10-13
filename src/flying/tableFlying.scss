@@ -1,0 +1,96 @@
+.content-page{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .container:nth-child(odd) {
+    background-color: skyblue;
+  }
+
+  & .container:hover{
+    box-shadow: 7px 23px 26px 17px rgba(0,0,0,0.58);
+    height: 120px;
+  }
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  font-family: "Apple Braille", serif;
+  width: 917px;
+  height: 82px;
+
+  &__terminal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #63c745;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    color: #63c745;
+  }
+
+  &__time,
+  &__nameAirport{
+    width: 90px;
+    text-align: center;
+  }
+
+  &__numberAir{
+    width: 80px;
+    text-align: center;
+  }
+
+}
+
+.container-logo{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+
+  &__name{
+    width: 120px;
+    text-align: center;
+  }
+
+  &__image{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+  }
+
+}
+
+.checkDays{
+  width: 917px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+
+  & a{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: skyblue;
+
+    & div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+    }
+  }
+
+  & a:hover{
+    border-bottom: 4px solid black;
+  }
+}

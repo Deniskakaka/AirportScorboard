@@ -1,0 +1,89 @@
+.header-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > div{
+    display: flex;
+    width: 917px;
+    justify-content: center;
+    background-color: #ffffff;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+
+  h1{
+    font-family: "Apple Braille", serif;
+    font-size: 60px;
+  }
+
+  form{
+    display: flex;
+
+    input{
+      padding-left: 20px;
+      width: 420px;
+      height: 70px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      outline: none;
+      cursor: pointer;
+      border: none;
+    }
+
+    button{
+      width: 190px;
+      height: 72px;
+      font-size: 32px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border: 1px solid deepskyblue;
+      background-color: deepskyblue;
+      color: white;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  input[placeholder] {
+    font-size: 30px;
+  }
+}
+
+.arrival,
+.departure {
+  width: 458.5px;
+  height: 60px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 25px;
+  outline: none;
+}
+
+.arrival{
+  border-top-left-radius: 25px;
+}
+
+.departure{
+  border-top-right-radius: 25px;
+}
+
+.blue{
+  background-color: deepskyblue;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  transition: all 0.8s ease;
+  color: #ffffff;
+}
+
+.selectorLanguage{
+  display: flex;
+  width: 630px;
+  height: 34px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: skyblue;
+  color: #ffffff;
+
+  border-radius: 5px;
+  border: solid 1px skyblue;
+}
