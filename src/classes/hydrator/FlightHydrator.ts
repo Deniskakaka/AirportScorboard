@@ -57,7 +57,6 @@ export default class FlightHydrator {
     }
 
     public hydrateEntity<T>(object: UnionPlace): Flight {
-
         return new Flight(
             object.actual,
             this.translationHydrator.hydrateCollection(object),

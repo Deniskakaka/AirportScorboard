@@ -42,7 +42,7 @@ export const render = (
             </Link>
         </div>
         {
-            list.map((i, index) => <div key={Math.random()} className='container'>
+            list.filter(element => moment(element.getTime()).format('DD-MM-YYYY') === date).map((i, index) => <div key={Math.random()} className='container'>
                 <span className='container__terminal'>{i.getTerminal()}</span>
                 <span className='container__time'>{language === 'en' ? moment(i.getActual()).format('hh:mm a') : moment(i.getActual()).format('hh:mm')}</span>
                 <span className='container__nameAirport'>{i.getAirportTranslations().getNeedName(language)[index].getName()}</span>
